@@ -4,7 +4,12 @@ Bayesian Modeling of Time Series Data (BayModTS) is a FAIR Bayesian modeling wor
 BayModTS can classify outliers based on an uncertainty prediction of the dynamics of a system. Further, conditions can be distinguished based on the underyling uncertainty with a user-specified credibility level.
 
 ## Install
-TODO: create requirements file
+To install the necessary packages you can use the BayModTS_requirements.txt file with conda.
+
+`conda create --name baymodts --file BayModTS_requirements.txt`
+
+Please make sure to have the following C++ Libraries installed for the use of amici:
+`swig libblas-dev libatlas-base-dev libhdf5-dev`
 
 ## The Workflow
 The workflow is based on the PEtab format for parameter estimation [Schmiester et al. (2021)](https://doi.org/10.1371/journal.pcbi.1008646).
