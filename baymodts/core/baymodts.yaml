@@ -1,0 +1,11 @@
+format_version: 1
+parameter_file: parameters_retarded_transient_dynamics.tsv
+problems:
+- condition_files:
+  - experimental_conditions_retarded_transient_dynamics.tsv
+  measurement_files:
+  - retarded_transient_dynamics_measurement_table.tsv
+  observable_files:
+  - observables_retarded_transient_dynamics.tsv
+  sbml_files:
+  - RTD.xml
