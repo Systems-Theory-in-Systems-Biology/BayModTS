@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "baymodts"
+version = "0.1.0"
+description = "Bayesian Modeling of Time Series Data (BayModTS) is a FAIR Bayesian modeling workflow of time series data."
+authors = ["Sebastian Hoepfl <sebastian.hoepfl@isa.uni-stuttgart.de>""]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+include = []
+exclude = ["**/__pycache__/*", "**/build/*", "**/*.so"]
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/Systems-Theory-in-Systems-Biology/BayModTS"
+"Bug Tracker" = "https://github.com/Systems-Theory-in-Systems-Biology/BayModTS/issues"
+
+[tool.poetry.dependencies]
+python = "^3.9.1"
+amici = "^0.16.0"
+fides = "^0.7.5"
+h5py = "^3.8.0"
+petab = "^0.1.30"
+pypesto = "^0.2.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
