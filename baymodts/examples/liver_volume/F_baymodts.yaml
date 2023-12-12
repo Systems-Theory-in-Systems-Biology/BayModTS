@@ -1,0 +1,11 @@
+format_version: 1
+parameter_file: baymodts_parameters.tsv
+problems:
+- condition_files:
+  - baymodts_experimental_conditions.tsv
+  measurement_files:
+  - measurement_files/F_measurement_table.tsv
+  observable_files:
+  - baymodts_observables.tsv
+  sbml_files:
+  - RTD_identical_response_times.xml

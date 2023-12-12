@@ -1,0 +1,11 @@
+format_version: 1
+parameter_file: parameter_rtd_steatosis_Morphine_3Glucuronide.tsv
+problems:
+- condition_files:
+  - experimental_conditions_rtd_steatosis.tsv
+  measurement_files:
+  - measurement_files/Morphine_3Glucuronide_4Wks_measurement_table.tsv
+  observable_files:
+  - observables_rtd_steatosis.tsv
+  sbml_files:
+  - rtd_steatosis.xml

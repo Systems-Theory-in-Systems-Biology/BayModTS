@@ -1,0 +1,11 @@
+format_version: 1
+parameter_file: parameter_rtd_steatosis_Codeine_6Glucuronide.tsv
+problems:
+- condition_files:
+  - experimental_conditions_rtd_steatosis.tsv
+  measurement_files:
+  - measurement_files/Codeine_6Glucuronide_2Wks_measurement_table.tsv
+  observable_files:
+  - observables_rtd_steatosis.tsv
+  sbml_files:
+  - rtd_steatosis.xml

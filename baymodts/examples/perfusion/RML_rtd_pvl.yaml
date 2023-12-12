@@ -1,0 +1,11 @@
+format_version: 1
+parameter_file: rtd_pvl_parameters.tsv
+problems:
+- condition_files:
+  - rtd_pvl_experimental_conditions_V21.tsv
+  measurement_files:
+  - measurement_files/RML_measurement_table.tsv
+  observable_files:
+  - rtd_pvl_observables.tsv
+  sbml_files:
+  - RTD_identical_response_times.xml

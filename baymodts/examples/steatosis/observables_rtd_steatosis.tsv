@@ -1,0 +1,2 @@
+observableId	observableName	observableFormula	noiseFormula	noiseDistribution
+y_obs	RTD output value	y	noiseParameter1_y_obs	normal
