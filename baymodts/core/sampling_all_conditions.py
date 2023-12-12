@@ -259,10 +259,7 @@ def _plot_trajectories_by_condition(
                     t_lower,
                     lower_data,
                     upper_data,
-                    facecolor=rgba2rgb(
-                        variable_colors[output_index]
-                        + [level_opacities[level_index]]
-                    ),
+                    facecolor=median_color,
                     alpha=alpha,
                     lw=0,
                 )
