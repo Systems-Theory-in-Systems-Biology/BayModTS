@@ -17,7 +17,7 @@ creators = [
     ]
 
 
-def create_pk_model(model: Model, models_dir: Path, visualize: bool = False) -> None:
+def create_pk_model(model: Model, models_dir: Path, equations: bool = False, visualize: bool = False) -> None:
     """Create model."""
     results: FactoryResult = create_model(
         model=model,
@@ -27,18 +27,19 @@ def create_pk_model(model: Model, models_dir: Path, visualize: bool = False) -> 
     )
 
     # create differential equations
-    md_path = models_dir / f"{model.sid}.md"
-    ode_factory = odefac.SBML2ODE.from_file(sbml_file=results.sbml_path)
-    ode_factory.to_markdown(md_file=md_path)
+    if equations:
+        md_path = models_dir / f"{model.sid}.md"
+        ode_factory = odefac.SBML2ODE.from_file(sbml_file=results.sbml_path)
+        ode_factory.to_markdown(md_file=md_path)
 
-    console.rule(style="white")
-    from rich.markdown import Markdown
+        console.rule(style="white")
+        from rich.markdown import Markdown
 
-    with open(md_path, "r") as f:
-        md_str = f.read()
-        md = Markdown(md_str)
-        console.print(md)
-    console.rule(style="white")
+        with open(md_path, "r") as f:
+            md_str = f.read()
+            md = Markdown(md_str)
+            console.print(md)
+        console.rule(style="white")
 
     # visualize network
     if visualize:

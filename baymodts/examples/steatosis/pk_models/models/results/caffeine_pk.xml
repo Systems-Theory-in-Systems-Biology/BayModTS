@@ -11,6 +11,7 @@
     <notes>
       <body xmlns="http://www.w3.org/1999/xhtml">
         <h1>Model of absorption and distribution of caffeine.</h1>
+        <p>Simple two-compartment pharmacokinetics model for caffeine.</p>
         <h2>Terms of use</h2>
         <p>The content of this model has been carefully created in a manual research effort.
 This file has been created by <a href="https://livermetabolism.com">Matthias König</a>
@@ -54,6 +55,13 @@ FOR A PARTICULAR PURPOSE.</p></body>
           <dcterms:modified rdf:parseType="Resource">
             <dcterms:W3CDTF>1900-01-01T00:00:00Z</dcterms:W3CDTF>
           </dcterms:modified>
+          <bqbiol:is>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/snomed/447612001"/>
+              <rdf:li rdf:resource="http://identifiers.org/ncit/C45247"/>
+              <rdf:li rdf:resource="http://identifiers.org/taxon/10090"/>
+            </rdf:Bag>
+          </bqbiol:is>
         </rdf:Description>
       </rdf:RDF>
     </annotation>
@@ -114,6 +122,23 @@ FOR A PARTICULAR PURPOSE.</p></body>
           <unit kind="mole" exponent="1" scale="0" multiplier="0.001"/>
           <unit kind="second" exponent="-1" scale="0" multiplier="60"/>
           <unit kind="litre" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mug" name="µg">
+        <listOfUnits>
+          <unit kind="gram" exponent="1" scale="0" multiplier="1e-06"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="ng_per_ml" name="mg/ml">
+        <listOfUnits>
+          <unit kind="gram" exponent="1" scale="0" multiplier="0.001"/>
+          <unit kind="litre" exponent="-1" scale="0" multiplier="0.001"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="ng_per_mug" name="ng/µg">
+        <listOfUnits>
+          <unit kind="gram" exponent="1" scale="0" multiplier="1e-09"/>
+          <unit kind="gram" exponent="-1" scale="0" multiplier="1e-06"/>
         </listOfUnits>
       </unitDefinition>
       <unitDefinition id="per_min" name="1/min">
@@ -182,6 +207,8 @@ FOR A PARTICULAR PURPOSE.</p></body>
               <bqbiol:is>
                 <rdf:Bag>
                   <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="http://identifiers.org/CHEBI:27732"/>
+                  <rdf:li rdf:resource="http://identifiers.org/ncit/C328"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -195,6 +222,8 @@ FOR A PARTICULAR PURPOSE.</p></body>
               <bqbiol:is>
                 <rdf:Bag>
                   <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="http://identifiers.org/CHEBI:27732"/>
+                  <rdf:li rdf:resource="http://identifiers.org/ncit/C328"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -208,6 +237,8 @@ FOR A PARTICULAR PURPOSE.</p></body>
               <bqbiol:is>
                 <rdf:Bag>
                   <rdf:li rdf:resource="http://identifiers.org/SBO:0000247"/>
+                  <rdf:li rdf:resource="http://identifiers.org/CHEBI:27732"/>
+                  <rdf:li rdf:resource="http://identifiers.org/ncit/C328"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -216,6 +247,34 @@ FOR A PARTICULAR PURPOSE.</p></body>
       </species>
     </listOfSpecies>
     <listOfParameters>
+      <parameter metaid="meta_Mr_caf" sboTerm="SBO:0000647" id="Mr_caf" name="molecular weight caffeine" value="100" units="g_per_mole" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_Mr_caf">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/SBO:0000647"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter id="conc_conversion" name="conversion factor [µg/ml] -&gt; [ng/ml]" value="1000" units="ng_per_mug" constant="true"/>
+      <parameter metaid="meta_caf_plasma" id="caf_plasma" name="caffeine plasma [ng/ml]" value="NaN" units="ng_per_ml" constant="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_caf_plasma">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/CHEBI:27732"/>
+                  <rdf:li rdf:resource="http://identifiers.org/ncit/C328"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
       <parameter metaid="meta_k" sboTerm="SBO:0000009" id="k" name="absorption rate" value="1" units="l_per_min" constant="true">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -256,6 +315,18 @@ FOR A PARTICULAR PURPOSE.</p></body>
         </annotation>
       </parameter>
     </listOfParameters>
+    <listOfRules>
+      <assignmentRule variable="caf_plasma">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> caf_cent </ci>
+            <ci> Mr_caf </ci>
+            <ci> conc_conversion </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+    </listOfRules>
     <listOfReactions>
       <reaction metaid="meta_ABSORPTION" sboTerm="SBO:0000176" id="ABSORPTION" name="absorption caffeine" reversible="false">
         <notes>

@@ -7,11 +7,9 @@ from sbmlutils.cytoscape import visualize_sbml
 from sbmlutils.examples.templates import terms_of_use
 from sbmlutils.factory import *
 from sbmlutils.metadata import *
+from pk_models.models import annotations
 
 from pk_models.models.templates import create_pk_model
-
-# FIXME: [mmole/l] -> [ng/ml]
-# FIXME: annotations of model components
 
 
 class U(Units):
@@ -19,7 +17,8 @@ class U(Units):
 
     mmole = UnitDefinition("mmole")
     min = UnitDefinition("min")
-    mg = UnitDefinition("mg")
+    mg= UnitDefinition("mg")
+    mug = UnitDefinition("mug", "µg")
     per_min = UnitDefinition("per_min", "1/min")
     per_min_l = UnitDefinition("per_min_l", "1/min/liter")
     m2 = UnitDefinition("m2", "meter^2")
@@ -30,6 +29,8 @@ class U(Units):
     l_per_min = UnitDefinition("l_per_min", "l/min")
     l_per_min_mmole = UnitDefinition("l_per_min_mmole", "l/min/mmole")
     mM = UnitDefinition("mM", "mmole/liter")
+    ng_per_ml = UnitDefinition("ng_per_ml", "mg/ml")
+    ng_per_mug = UnitDefinition("ng_per_mug", "ng/µg")
 
 
 _m = Model(
@@ -37,6 +38,8 @@ _m = Model(
     name="Caffeine pharmacokinetics model",
     notes="""
     # Model of absorption and distribution of caffeine.
+    
+    Simple two-compartment pharmacokinetics model for caffeine.
     """
     + terms_of_use,
     creators=[
@@ -56,8 +59,16 @@ _m = Model(
         length=U.meter,
         area=U.m2,
         volume=U.liter,
+        # concentration [µg/l] -> [ng/ml]
     ),
+    annotations=[
+        # mouse (mus musculus)
+        (BQB.IS, "snomed/447612001"),
+        (BQB.IS, "ncit/C45247"),
+        (BQB.IS, "taxon/10090"),
+    ]
 )
+
 _m.compartments = [
     Compartment(
         sid="Vgut",
@@ -79,6 +90,7 @@ _m.compartments = [
         value=1.0,
         sboTerm=SBO.PHYSICAL_COMPARTMENT,
         unit=U.liter,
+        annotations=annotations.compartments["plasma"],
     ),
 ]
 
@@ -91,6 +103,7 @@ _m.species = [
         hasOnlySubstanceUnits=False,
         substanceUnit=U.mmole,
         sboTerm=SBO.SIMPLE_CHEMICAL,
+        annotations=annotations.species["caf"],
         notes="""
         handled in amount not concentration
         """,
@@ -102,6 +115,7 @@ _m.species = [
         initialConcentration=0.0,
         substanceUnit=U.mmole,
         sboTerm=SBO.SIMPLE_CHEMICAL,
+        annotations=annotations.species["caf"],
     ),
     Species(
         sid="caf_peri",
@@ -110,7 +124,34 @@ _m.species = [
         initialConcentration=0.0,
         substanceUnit=U.mmole,
         sboTerm=SBO.SIMPLE_CHEMICAL,
+        annotations=annotations.species["caf"],
     ),
+]
+
+_m.parameters = [
+    Parameter(
+    "Mr_caf", 100, unit=U.g_per_mole,
+        name="molecular weight caffeine",
+        sboTerm=SBO.MOLECULAR_MASS,
+    ),
+    Parameter(
+    "conc_conversion", 1000.0, unit=U.ng_per_mug,
+        name="conversion factor [µg/ml] -> [ng/ml]",
+        # sboTerm=SBO.SYSTEMS_DESCRIPTION_CONSTANT,
+    ),
+    Parameter(
+        "caf_plasma", NaN, unit=U.ng_per_ml,
+        name="caffeine plasma [ng/ml]",
+        constant=False,
+        annotations=annotations.species["caf"],
+        # sboTerm=SBO.SYSTEMS_DESCRIPTION_PARAMETER,
+    )
+]
+
+_m.rules = [
+    AssignmentRule(
+        "caf_plasma", "caf_cent * Mr_caf * conc_conversion"  # [mmole/l]*[g/mole]=[µg/ml] -> [ng/ml]
+    )
 ]
 
 _m.reactions = [
@@ -188,11 +229,14 @@ _m.reactions = [
 ]
 
 
-
-
 if __name__ == "__main__":
     from pk_models import MODELS_DIR
 
-    create_pk_model(model=_m, models_dir=MODELS_DIR, visualize=True)
+    create_pk_model(
+        model=_m,
+        models_dir=MODELS_DIR,
+        equations=True,
+        visualize=True,
+    )
 
 

@@ -34,24 +34,23 @@ def reference_simulation(r: roadrunner.RoadRunner) -> None:
 
         ax.plot(
             df.time/60,  # [min] -> [hr]
-            df[sid],
-            label=sid,
+            df[f"[{sid}]"],
+            label=labels[sid],
             linewidth=linewidth,
         )
 
         # ax.legend()
         ax.set_title("Reference simulation", fontweight="bold", fontsize="15")
         ax.set_xlabel("time [min]", fontweight="bold", fontsize="12")
-        ax.set_ylabel("concentration [mmole/min]", fontweight="bold", fontsize="12")
+        ax.set_ylabel("concentration [mmole/l]", fontweight="bold", fontsize="12")
 
     ax.legend()
-    plt.tight_layout()
     plt.show()
 
 
 if __name__ == "__main__":
     # load_model
     from pk_models import MODELS_DIR
-    simple_pk_path: Path = MODELS_DIR / "caffeine_pk.xml"
-    r: roadrunner.RoadRunner = roadrunner.RoadRunner(str(simple_pk_path))
+    model_path: Path = MODELS_DIR / "caffeine_pk.xml"
+    r: roadrunner.RoadRunner = roadrunner.RoadRunner(str(model_path))
     reference_simulation(r)
