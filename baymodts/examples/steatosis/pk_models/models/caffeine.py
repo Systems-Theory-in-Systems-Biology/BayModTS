@@ -10,6 +10,9 @@ from sbmlutils.metadata import *
 
 from pk_models.models.templates import create_pk_model
 
+# FIXME: [mmole/l] -> [ng/ml]
+# FIXME: annotations of model components
+
 
 class U(Units):
     """UnitDefinitions."""
