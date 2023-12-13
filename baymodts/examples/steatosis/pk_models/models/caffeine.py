@@ -1,4 +1,4 @@
-"""Simple model for demonstration."""
+"""Caffeine PK model."""
 from pathlib import Path
 
 from sbmlutils.console import console
@@ -8,7 +8,7 @@ from sbmlutils.examples.templates import terms_of_use
 from sbmlutils.factory import *
 from sbmlutils.metadata import *
 
-from pk_models.models import templates
+from pk_models.models.templates import create_pk_model
 
 
 class U(Units):
@@ -30,13 +30,21 @@ class U(Units):
 
 
 _m = Model(
-    sid="simple_pk",
-    name="Simple PK model",
+    sid="caffeine_pk",
+    name="Caffeine pharmacokinetics model",
     notes="""
-    # Model of absorption and distribution of substance y.
+    # Model of absorption and distribution of caffeine.
     """
     + terms_of_use,
-    creators=templates.creators,
+    creators=[
+        Creator(
+            familyName="König",
+            givenName="Matthias",
+            email="koenigmx@hu-berlin.de",
+            organization="Humboldt-University Berlin, Institute for Theoretical Biology",
+            site="https://livermetabolism.com",
+        ),
+    ],
     units=U,
     model_units=ModelUnits(
         time=U.min,
@@ -73,8 +81,8 @@ _m.compartments = [
 
 _m.species = [
     Species(
-        sid="y_gut",
-        name="y gut",
+        sid="caf_gut",
+        name="caffeine gut",
         compartment="Vgut",
         initialAmount=1.0,
         hasOnlySubstanceUnits=False,
@@ -85,16 +93,16 @@ _m.species = [
         """,
     ),
     Species(
-        sid="y_cent",
-        name="y central",
+        sid="caf_cent",
+        name="caffeine plasma",
         compartment="Vcent",
         initialConcentration=0.0,
         substanceUnit=U.mmole,
         sboTerm=SBO.SIMPLE_CHEMICAL,
     ),
     Species(
-        sid="y_peri",
-        name="y peripheral",
+        sid="caf_peri",
+        name="caffeine peripheral",
         compartment="Vperi",
         initialConcentration=0.0,
         substanceUnit=U.mmole,
@@ -105,9 +113,9 @@ _m.species = [
 _m.reactions = [
     Reaction(
         sid="ABSORPTION",
-        name="absorption",
-        equation="y_gut -> y_cent",
-        formula="k * y_gut",
+        name="absorption caffeine",
+        equation="caf_gut -> caf_cent",
+        formula="k * caf_gut",
         sboTerm=SBO.BIOCHEMICAL_REACTION,
         notes="""
         [mmole/min]
@@ -125,9 +133,9 @@ _m.reactions = [
     ),
     Reaction(
         sid="CLEARANCE",
-        name="clearance",
-        equation="y_cent ->",
-        formula="CL * y_cent",
+        name="clearance caffeine",
+        equation="caf_cent ->",
+        formula="CL * caf_cent",
         sboTerm=SBO.BIOCHEMICAL_REACTION,
         notes="""
         [mmole/min]
@@ -136,7 +144,7 @@ _m.reactions = [
         pars=[
             Parameter(
                 sid="CL",
-                name="clearance",
+                name="clearance caffeine",
                 value=1.0,
                 unit=U.l_per_min,
                 sboTerm=SBO.KINETIC_CONSTANT,
@@ -146,8 +154,8 @@ _m.reactions = [
     Reaction(
         sid="R1",
         name="transport peripheral (R1)",
-        equation="y_cent -> y_peri",
-        formula="Q * y_cent",
+        equation="caf_cent -> caf_peri",
+        formula="Q * caf_cent",
         sboTerm=SBO.BIOCHEMICAL_REACTION,
         notes="""
         [mmole/min]
@@ -166,8 +174,8 @@ _m.reactions = [
     Reaction(
         sid="R2",
         name="transport central (R2)",
-        equation="y_peri -> y_cent",
-        formula="Q * y_peri",
+        equation="caf_peri -> caf_cent",
+        formula="Q * caf_peri",
         sboTerm=SBO.BIOCHEMICAL_REACTION,
         notes="""
         [mmole/min]
@@ -177,37 +185,11 @@ _m.reactions = [
 ]
 
 
-def create_simple_pk(models_dir: Path, visualize: bool = False) -> None:
-    """Create model."""
-    results: FactoryResult = create_model(
-        model=_m,
-        filepath=MODELS_DIR / f"{_m.sid}.xml",
-        sbml_level=3,
-        sbml_version=2,
-        # validation_options=ValidationOptions(units_consistency=False)
-    )
-
-    # create differential equations
-    md_path = MODELS_DIR / f"{_m.sid}.md"
-    ode_factory = odefac.SBML2ODE.from_file(sbml_file=results.sbml_path)
-    ode_factory.to_markdown(md_file=md_path)
-
-    console.rule(style="white")
-    from rich.markdown import Markdown
-
-    with open(md_path, "r") as f:
-        md_str = f.read()
-        md = Markdown(md_str)
-        console.print(md)
-    console.rule(style="white")
-
-    # visualize network
-    visualize_sbml(sbml_path=results.sbml_path, delete_session=True)
 
 
 if __name__ == "__main__":
     from pk_models import MODELS_DIR
 
-    # FIXME: generalize for all models
-    create_simple_pk(models_dir=MODELS_DIR, visualize=True)
+    create_pk_model(model=_m, models_dir=MODELS_DIR, visualize=True)
+
 

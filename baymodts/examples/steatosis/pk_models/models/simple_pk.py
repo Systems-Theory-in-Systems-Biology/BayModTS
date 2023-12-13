@@ -1,12 +1,10 @@
 """Simple model for demonstration."""
-from pathlib import Path
-
 from sbmlutils.console import console
-from sbmlutils.converters import odefac
-from sbmlutils.cytoscape import visualize_sbml
 from sbmlutils.examples.templates import terms_of_use
 from sbmlutils.factory import *
 from sbmlutils.metadata import *
+
+from pk_models.models.templates import create_pk_model
 
 
 class U(Units):
@@ -183,37 +181,8 @@ _m.reactions = [
 ]
 
 
-def create_simple_pk(models_dir: Path, visualize: bool = False) -> None:
-    """Create model."""
-    results: FactoryResult = create_model(
-        model=_m,
-        filepath=MODELS_DIR / f"{_m.sid}.xml",
-        sbml_level=3,
-        sbml_version=2,
-        # validation_options=ValidationOptions(units_consistency=False)
-    )
-
-    # create differential equations
-    md_path = MODELS_DIR / f"{_m.sid}.md"
-    ode_factory = odefac.SBML2ODE.from_file(sbml_file=results.sbml_path)
-    ode_factory.to_markdown(md_file=md_path)
-
-    console.rule(style="white")
-    from rich.markdown import Markdown
-
-    with open(md_path, "r") as f:
-        md_str = f.read()
-        md = Markdown(md_str)
-        console.print(md)
-    console.rule(style="white")
-
-    # visualize network
-    visualize_sbml(sbml_path=results.sbml_path, delete_session=True)
-
-
 if __name__ == "__main__":
     from pk_models import MODELS_DIR
 
-    # FIXME: generalize for all models
-    create_simple_pk(models_dir=MODELS_DIR, visualize=True)
+    create_pk_model(model=_m, models_dir=MODELS_DIR, visualize=True)
 
