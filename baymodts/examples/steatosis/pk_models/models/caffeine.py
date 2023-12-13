@@ -159,7 +159,7 @@ _m.reactions = [
         sid="ABSORPTION",
         name="absorption caffeine",
         equation="caf_gut -> caf_cent",
-        formula="k * caf_gut",
+        formula="k_absorption * caf_gut",
         sboTerm=SBO.BIOCHEMICAL_REACTION,
         notes="""
         [mmole/min]
@@ -167,7 +167,7 @@ _m.reactions = [
         """,
         pars=[
             Parameter(
-                sid="k",
+                sid="k_absorption",
                 name="absorption rate",
                 value=1.0,
                 unit=U.l_per_min,

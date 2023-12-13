@@ -11,7 +11,6 @@ pip install -r requirements.txt
 ```
 
 ## TODO:
-- [ ] FIXME: [mmole/l] -> [ng/ml] (add substance)
 - [ ] FIXME: annotations of model components (caffeine)
 - [ ] FIXME: plot data with model;
 - [ ] TODO: midazolam model
