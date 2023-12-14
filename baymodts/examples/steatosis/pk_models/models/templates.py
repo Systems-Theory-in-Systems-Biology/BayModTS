@@ -17,7 +17,7 @@ creators = [
     ]
 
 
-def create_pk_model(model: Model, models_dir: Path, equations: bool = False, visualize: bool = False) -> None:
+def create_pk_model(model: Model, models_dir: Path, equations: bool = False, visualize: bool = False, delete_session: bool = True) -> None:
     """Create model."""
     results: FactoryResult = create_model(
         model=model,
@@ -43,4 +43,4 @@ def create_pk_model(model: Model, models_dir: Path, equations: bool = False, vis
 
     # visualize network
     if visualize:
-        visualize_sbml(sbml_path=results.sbml_path, delete_session=True)
+        visualize_sbml(sbml_path=results.sbml_path, delete_session=delete_session)
