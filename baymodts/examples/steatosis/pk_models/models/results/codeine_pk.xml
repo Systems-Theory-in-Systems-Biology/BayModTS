@@ -209,7 +209,7 @@ FOR A PARTICULAR PURPOSE.</p></body>
       </compartment>
     </listOfCompartments>
     <listOfSpecies>
-      <species metaid="meta_cod_gut" sboTerm="SBO:0000247" id="cod_gut" name="codeine gut" compartment="Vgut" initialAmount="0.000178023327194598" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species metaid="meta_cod_gut" sboTerm="SBO:0000247" id="cod_gut" name="codeine gut" compartment="Vgut" initialAmount="0.0001937207748831" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
             <p>handled in amount not concentration</p>
@@ -270,7 +270,7 @@ FOR A PARTICULAR PURPOSE.</p></body>
       </species>
     </listOfSpecies>
     <listOfParameters>
-      <parameter metaid="meta_Mr_cod" sboTerm="SBO:0000647" id="Mr_cod" name="molecular weight codeine" value="325.8" units="g_per_mole" constant="true">
+      <parameter metaid="meta_Mr_cod" sboTerm="SBO:0000647" id="Mr_cod" name="molecular weight codeine" value="299.4" units="g_per_mole" constant="true">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_Mr_cod">

@@ -270,7 +270,7 @@ if __name__ == "__main__":
         ModelInfo(
             sid="cod",
             name="codeine",
-            Mr=325.8,  # [g/mole]
+            Mr=299.4,  # [g/mole]
             dose_bw=2  # [mg/kg]
         )
     ]:

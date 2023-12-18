@@ -12,7 +12,7 @@ length: [m]
 ## Parameters `p`
 ```
 CL = 0.01  # [l/hr] 
-Mr_cod = 325.8  # [g/mol] 
+Mr_cod = 299.4  # [g/mol] 
 Q = 0.1  # [l/hr] 
 Vcent = 0.00232  # [l] 
 Vgut = 0.00145  # [l] 
@@ -24,7 +24,7 @@ kabs = 0.01  # [l/hr]
 ## Initial conditions `x0`
 ```
 cod_cent = 0.0  # [mmol/l] Vcent
-cod_gut = 0.12277470841006759  # [mmol/l] Vgut
+cod_gut = 0.13360053440213793  # [mmol/l] Vgut
 cod_peri = 0.0  # [mmol/l] Vperi
 ```
 
