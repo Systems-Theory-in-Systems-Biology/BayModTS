@@ -1,0 +1,7 @@
+parameterId	parameterScale	lowerBound	upperBound	estimate	nominalValue
+Mr_caf	lin	0.001	100.0	0	194.19
+conc_conversion	lin	0.001	100.0	0	1000.0
+kabs	lin	0.001	100.0	1	0.01
+CL	lin	0.001	100.0	1	0.01
+Q	lin	0.001	100.0	1	0.1
+sd1_y_obs	lin	0.001	1000.0	1	1.0
