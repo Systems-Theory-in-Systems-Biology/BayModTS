@@ -1,0 +1,11 @@
+format_version: 1
+parameter_file: parameter_midazolam_pk.tsv
+problems:
+- condition_files:
+  - experimental_conditions_rtd_steatosis.tsv
+  measurement_files:
+  - measurement_files/midazolam_2Wks_measurement_table.tsv
+  observable_files:
+  - observables_midazolam_pk.tsv
+  sbml_files:
+  - midazolam_pk.xml
