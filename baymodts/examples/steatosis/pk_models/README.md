@@ -17,3 +17,7 @@ mkvirtualenv baymodts --python=python3.11
 cd baymodts/examples/steatosis/pk_models
 pip install -r requirements.txt
 ```
+
+## BayModTS
+
+For application of the BayModTS workflow you can use the BayModTS_steatosis_pk_models.py skript, together with the SBML PK models and the files in the PEtab_pk_model_files.
