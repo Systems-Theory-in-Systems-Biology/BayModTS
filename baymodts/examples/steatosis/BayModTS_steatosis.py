@@ -34,35 +34,45 @@ from pypesto.C import CONDITION, OUTPUT
 
 model_name = 'rtd_steatosis'
 
-Substances = ['Norcodeine', 'Morphine', 'Morphine_3Glucuronide', 'Codeine']
-# ['Caffeine', 'Midazolam', 'OH_Midazolam', 'Codeine_6Glucuronide']
+Substances = ['caffeine', 'midazolam', 'codeine']
+# ['OH_midazolam', 'codeine_6glucuronide', 'norcodeine', 'morphine', 'morphine_3glucuronide']
 
 p = Path(__file__).parent
 Path_to_measurement_files = os.path.join(p, 'measurement_files/')
+
+import sys
+sys.path.append(os.path.join(p.parent.parent.parent, 'Python/BayModTS/'))
+from sampling_all_conditions import sampling_prediction_trajectories
+
+# colors for ensemble plots
+pal = ['#781F19', '#C2630B', '#F1C03E']
+Conditions = ['Control', '2Wks', '4Wks']
+median_colors = {cond: pal[i] for i, cond in enumerate(Conditions)}
+color_add = {cond: (i+1)*0.2 + 0.1 for i, cond in enumerate(Conditions)}
 
 # --------------------------------------------------------------------------------------------
 # Load data and create measurement tables
 # --------------------------------------------------------------------------------------------
 
-Caffeine = pd.read_excel(f'{p.parent}/2021-07-22_Caffeine_Raw_data_ngml.xlsx',
+caffeine = pd.read_excel(f'{p.parent}/2021-07-22_Caffeine_Raw_data_ngml.xlsx',
                         header=1)  # values converted to ng/ml
-Midazolam = pd.read_excel(f'{p.parent}/2021-09-15_Midazolam_Raw_data.xlsx',
+midazolam = pd.read_excel(f'{p.parent}/2021-09-15_Midazolam_Raw_data.xlsx',
                           sheet_name='Groups analysis')
-OH_Midazolam = pd.read_excel(f'{p.parent}/2021-11-01_1-OH-Midazolam_raw_data_and_chart.xlsx')
-Codeine_6Glucuronide = pd.read_excel(f'{p.parent}/2021-11-01_Codeine_6_glucuronide_raw_data.xlsx')
-Norcodeine = pd.read_excel(f'{p.parent}/2021-11-01_Norcodeine_raw_data.xlsx')
-Morphine = pd.read_excel(f'{p.parent}/2021-11-01_Morphine_raw_data.xlsx')
-Morphine_3Glucuronide = pd.read_excel(f'{p.parent}/2021-11-01_Morphine-3-Glucuronide_raw_data.xlsx')
-Codeine = pd.read_excel(f'{p.parent}/2021-11-01_Codeine_Raw_data.xlsx')
+OH_midazolam = pd.read_excel(f'{p.parent}/2021-11-01_1-OH-Midazolam_raw_data_and_chart.xlsx')
+codeine_6glucuronide = pd.read_excel(f'{p.parent}/2021-11-01_Codeine_6_glucuronide_raw_data.xlsx')
+norcodeine = pd.read_excel(f'{p.parent}/2021-11-01_Norcodeine_raw_data.xlsx')
+morphine = pd.read_excel(f'{p.parent}/2021-11-01_Morphine_raw_data.xlsx')
+morphine_3glucuronide = pd.read_excel(f'{p.parent}/2021-11-01_Morphine-3-Glucuronide_raw_data.xlsx')
+codeine = pd.read_excel(f'{p.parent}/2021-11-01_Codeine_Raw_data.xlsx')
 
-data_dict = {'Caffeine': Caffeine,
-             'Midazolam': Midazolam,
-             'OH_Midazolam': OH_Midazolam,
-             'Codeine_6Glucuronide': Codeine_6Glucuronide,
-             'Norcodeine': Norcodeine,
-             'Morphine': Morphine,
-             'Morphine_3Glucuronide': Morphine_3Glucuronide,
-             'Codeine': Codeine}
+data_dict = {'caffeine': caffeine,
+             'midazolam': midazolam,
+             'OH_midazolam': OH_midazolam,
+             'codeine_6glucuronide': codeine_6glucuronide,
+             'norcodeine': norcodeine,
+             'morphine': morphine,
+             'morphine_3glucuronide': morphine_3glucuronide,
+             'codeine': codeine}
 
 
 class Measurement_data:
@@ -97,6 +107,7 @@ class Measurement_data:
         observable_array = ['y_obs' for i in range(self.number_of_replicates * len(self.t))]
         simulation_cond_array = ['condition1' for i in range(self.number_of_replicates * len(self.t))]
         noiseParameters_array = ['sd1_y_obs' for i in range(self.number_of_replicates * len(self.t))]
+        replicateId_array = [id for id in range(self.number_of_replicates) for timepoints in range(len(self.t)) ]
 
         # time array for all replicates
         tn = np.repeat(self.t, self.number_of_replicates)
@@ -113,7 +124,8 @@ class Measurement_data:
                             'simulationConditionId': simulation_cond_array,
                             'measurement': self.measurements_array,
                             'time': tn,
-                            'noiseParameters': noiseParameters_array}
+                            'noiseParameters': noiseParameters_array,
+                            'replicateId': replicateId_array}
         self.measurement_df = pd.DataFrame(measurement_dict)
 
         self.measurement_df.to_csv(f'{path}/{self.df_name}_{self.condition}_measurement_table.tsv', sep='\t', index=False)
@@ -193,7 +205,7 @@ class PEtab_problem:
         #  optimizer = optimize.FidesOptimizer()
         optimizer = optimize.ScipyOptimizer(method='powell')
 
-        self.result = optimize.minimize(problem, n_starts=200,
+        self.result = optimize.minimize(problem, n_starts=300,
                                         optimizer=optimizer)
         #sampler = sample.AdaptiveParallelTemperingSampler(
         #    internal_sampler=sample.AdaptiveMetropolisSampler(),
@@ -204,7 +216,7 @@ class PEtab_problem:
         #  sampler = sample.EmceeSampler(nwalkers=10, sampler_args=sampler_args)
         sampler = sample.AdaptiveMetropolisSampler()
 
-        self.result = sample.sample(problem, n_samples=300000,
+        self.result = sample.sample(problem, n_samples=1000000,
                                     sampler=sampler, result=self.result)
 
         burn = sample.geweke_test(self.result)  # cutting burin-in samples
@@ -289,14 +301,22 @@ class PEtab_problem:
             output_ids=observable_ids,
         )
 
+        # Create custom objective for ensemble, with specified time points
+        fast_dynamic_range = np.linspace(0, 1, 31)
+        slow_dynamic_range = np.linspace(1, 6, 30)
+        timepoints = [np.concatenate((fast_dynamic_range, slow_dynamic_range))]
+        amici_objective_custom = amici_objective.set_custom_timepoints(
+            timepoints=timepoints
+        )
+
         # Create pyPESTO predictors for states and observables
         predictor_x = AmiciPredictor(
-            amici_objective,
+            amici_objective_custom,
             post_processor=post_processor_x,
             output_ids=state_ids,
         )
         predictor_y = AmiciPredictor(
-            amici_objective,
+            amici_objective_custom,
             post_processor=post_processor_y,
             output_ids=observable_ids,
         )
@@ -349,29 +369,34 @@ class PEtab_problem:
         plt.rcParams["axes.labelweight"] = "bold"
         plt.rcParams['axes.titlesize'] = 22
         plt.rcParams['figure.titleweight'] = 'bold'  # before out
-        plt.rcParams['figure.figsize'] = (10, 8)
+        plt.rcParams['figure.figsize'] = (12, 12)
         plt.rcParams['legend.title_fontsize'] = 'x-large'
         plt.rcParams['legend.fontsize'] = 'xx-large'  # before out
 
-        ax = visualize.sampling_prediction_trajectories(
+        ax = sampling_prediction_trajectories(
             self.ensemble_prediction,
             levels=credibility_interval_levels,
             # size=(29,17),
             labels={'condition_0': 'cond_1'},
             axis_label_padding=60,
+            alpha_credibility=0.5,
             groupby=CONDITION,
             #  condition_ids=None,  # None, for all conditions
             output_ids=['y_obs'],   # must be observables - None, for all outputs
+            color_add=color_add[self.condition],
+            median_color=median_colors[self.condition]
         )
 
         # Plot experimental data
         Current_data = Measurement_data(self.substance, self.condition)
-        plt.boxplot([Current_data.df_cond.loc[:,i].to_numpy() for i in Current_data.column_names],
-                    positions=Current_data.t)
+        Current_data.create_measurement_df(path=Path_to_measurement_files)
+        plt.plot(np.repeat(Current_data.t, Current_data.number_of_replicates),
+                Current_data.measurement_df['measurement'].to_numpy(),
+                marker='+', color='k', linestyle='', markersize=20)
         plt.title(f'{self.substance} {self.condition}')
         # axis labels
-        plt.xlabel('time/h')
-        plt.ylabel('ng/ml')
+        plt.xlabel('time (h)')
+        plt.ylabel(f'plasma {self.substance} (ng/ml)')
 
         plt.setp(ax[0, 0].get_xticklabels(), rotation=60,
                  horizontalalignment='center')
@@ -384,11 +409,6 @@ def all_conditions_plot(UQ_control_object, UQ_2Wks_object, UQ_4Wks_object):
     Input:
         The UQ objects containing the Ensamble results
     """
-    import sys
-    sys.path.append(os.path.join(p.parent.parent, 'Python/BayModTS/'))
-    from sampling_all_conditions import sampling_prediction_trajectories
-    from sampling_all_conditions import _plot_trajectories_by_condition
-    from sampling_all_conditions import _handle_legends
     
     # Plot the results
     credibility_interval_levels = [ci]
@@ -402,29 +422,24 @@ def all_conditions_plot(UQ_control_object, UQ_2Wks_object, UQ_4Wks_object):
     plt.rcParams["axes.labelweight"] = "bold"
     plt.rcParams['axes.titlesize'] = 36
     plt.rcParams['axes.titleweight'] = "bold"  # before out
-    plt.rcParams['figure.figsize'] = (15, 8)
+    plt.rcParams['figure.figsize'] = (12, 12)
     plt.rcParams['legend.title_fontsize'] = 'x-large'
     plt.rcParams['legend.fontsize'] = 20  # before out
-    cmap = plt.cm.viridis
-    median_colors = {'Control': '#65019e', '2Wks': '#0505c1',
-                     '4Wks': '#037d14'}
 
     fig, ax = plt.subplots()
 
-    for condition_object, color_add in [[UQ_control_object, 0.1],
-                                        [UQ_2Wks_object, 0.3],
-                                        [UQ_4Wks_object, 0.5]]:
+    for condition_object in [UQ_control_object, UQ_2Wks_object, UQ_4Wks_object]:
         sampling_prediction_trajectories(
             condition_object.ensemble_prediction,
             levels=credibility_interval_levels,
             labels={'condition_0': condition_object.condition},
             axes=ax,
             axis_label_padding=60,
-            alpha_credibility=1,
+            alpha_credibility=0.5,
             groupby=CONDITION,
             condition_ids=None,  # None, for all conditions
             output_ids=['y_obs'],  # must be observables - None, for all outputs
-            color_add=color_add,
+            color_add=color_add[condition_object.condition],
             median_color=median_colors[condition_object.condition]
         )
         # Plot experimental data
@@ -434,12 +449,13 @@ def all_conditions_plot(UQ_control_object, UQ_2Wks_object, UQ_4Wks_object):
         
 
     plt.xticks(Current_data.t, labels=Current_data.t)
-    plt.title(UQ_control_object.substance, fontweight="bold")
+    # plt.title(UQ_control_object.substance, fontweight="bold")
 
     # axis labels
-    plt.xlabel('time/h')  
-    plt.ylabel('ng/ml')
-    plt.legend(prop={'size': 16})
+    plt.xlabel('time (h)')  
+    plt.ylabel(f'plasma {UQ_control_object.substance} (ng/ml)')
+    # plt.legend(prop={'size': 16})
+    plt.legend([],[], frameon=False)
     plt.setp(ax.get_xticklabels(), rotation=60, horizontalalignment='center')
     plt.tight_layout()
 
@@ -450,7 +466,7 @@ def all_conditions_plot(UQ_control_object, UQ_2Wks_object, UQ_4Wks_object):
 # ----------------------------------------------------------------------------
 
 if __name__ == '__main__':
-    ci = 95  # 100-(5/3)
+    ci = 95
     # Create PEtab measurement table for each Substance with Measurement_data class
     for df_name in Substances:
         df_name_control = Measurement_data(df_name, 'Control')
@@ -484,6 +500,6 @@ if __name__ == '__main__':
         UQ_4Wks.MCMC_sampling()
         UQ_4Wks.Ensemble_creation()
         UQ_4Wks.plot_ensemble()
-        UQ_2Wks.MCMC_visualization()
+        UQ_4Wks.MCMC_visualization()
 
         all_conditions_plot(UQ_control, UQ_2Wks, UQ_4Wks)
