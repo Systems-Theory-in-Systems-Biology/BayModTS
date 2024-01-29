@@ -457,6 +457,7 @@ def all_conditions_plot(UQ_control_object, UQ_2Wks_object, UQ_4Wks_object):
     # plt.legend(prop={'size': 16})
     plt.legend([],[], frameon=False)
     plt.setp(ax.get_xticklabels(), rotation=60, horizontalalignment='center')
+    ax.get_figure().gca().set_title('')  # remove automatic titles
     plt.tight_layout()
 
     plt.savefig(os.path.join(p, f'results/{UQ_control_object.substance}_all_ensemble_output_predictions.png'))
