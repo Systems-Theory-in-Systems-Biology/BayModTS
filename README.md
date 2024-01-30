@@ -1,6 +1,9 @@
 # BayModTS
 Bayesian Modeling of Time Series Data (BayModTS) is a FAIR Bayesian modeling workflow of time series data.
 
+![BayModTS_icon(1)](https://github.com/Systems-Theory-in-Systems-Biology/BayModTS/assets/66028655/26e17458-11ec-416b-bd72-76e49dd97d8c)
+
+
 BayModTS can classify outliers based on an uncertainty prediction of the dynamics of a system. Further, conditions can be distinguished based on the underyling uncertainty with a user-specified credibility level.
 
 ## Install
