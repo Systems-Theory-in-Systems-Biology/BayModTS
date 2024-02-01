@@ -209,7 +209,7 @@ FOR A PARTICULAR PURPOSE.</p></body>
       </compartment>
     </listOfCompartments>
     <listOfSpecies>
-      <species metaid="meta_caf_gut" sboTerm="SBO:0000247" id="caf_gut" name="caffeine gut" compartment="Vgut" initialAmount="0.00029867655389052" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species metaid="meta_caf_gut" sboTerm="SBO:0000247" id="caf_gut" name="caffeine gut" compartment="Vgut" initialAmount="0.000746691384726298" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
             <p>handled in amount not concentration</p>

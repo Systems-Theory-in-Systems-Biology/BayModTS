@@ -209,7 +209,7 @@ FOR A PARTICULAR PURPOSE.</p></body>
       </compartment>
     </listOfCompartments>
     <listOfSpecies>
-      <species metaid="meta_mid_gut" sboTerm="SBO:0000247" id="mid_gut" name="midazolam gut" compartment="Vgut" initialAmount="0.000445058317986495" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species metaid="meta_mid_gut" sboTerm="SBO:0000247" id="mid_gut" name="midazolam gut" compartment="Vgut" initialAmount="0.0001780233271945979128299" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
             <p>handled in amount not concentration</p>
