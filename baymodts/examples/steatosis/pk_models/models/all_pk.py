@@ -111,7 +111,7 @@ def create_model_from_info(
             sid=f"{sid}_gut",
             name=f"{name} gut",
             compartment="Vgut",
-            initialAmount=dose_bw * bodyweight / Mr,  # 2 [mg/kg] * 0.029 [kg] / 194.19 [g/mole] = 194.19 = 0.0002986 [mmole]
+            initialAmount=dose_bw * bodyweight / Mr,  # 2 [mg/kg] * 0.029 [kg] / 194.19 [g/mole] = 0.0002986 [mmole]
             hasOnlySubstanceUnits=False,
             substanceUnit=U.mmole,
             sboTerm=SBO.SIMPLE_CHEMICAL,
@@ -259,13 +259,13 @@ if __name__ == "__main__":
             sid="caf",
             name="caffeine",
             Mr=194.19,  # [g/mole]
-            dose_bw=2  # [mg/kg]
+            dose_bw=5  # [mg/kg]
         ),
         ModelInfo(
             sid="mid",
             name="midazolam",
             Mr=325.8,  # [g/mole]
-            dose_bw=5  # [mg/kg]
+            dose_bw=2  # [mg/kg]
         ),
         ModelInfo(
             sid="cod",
