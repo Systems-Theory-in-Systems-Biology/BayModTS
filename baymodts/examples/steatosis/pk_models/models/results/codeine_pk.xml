@@ -20,7 +20,7 @@ Simple two-compartment pharmacokinetics model for codeine.
         <p>The content of this model has been carefully created in a manual research effort.
 This file has been created by <a href="https://livermetabolism.com">Matthias König</a>
 using <a href="https://github.com/matthiaskoenig/sbmlutils">sbmlutils</a>.
-For questions contact <a href="mailto:koenigmx@hu-berlin.de">koenigmx@hu-berlin.de</a>. Copyright © 2023 Matthias König.</p>
+For questions contact <a href="mailto:koenigmx@hu-berlin.de">koenigmx@hu-berlin.de</a>. Copyright © 2024 Matthias König.</p>
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
           <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
         </a>
@@ -301,7 +301,24 @@ FOR A PARTICULAR PURPOSE.</p></body>
           </rdf:RDF>
         </annotation>
       </parameter>
-      <parameter metaid="meta_kabs" sboTerm="SBO:0000009" id="kabs" name="absorption rate" value="0.01" units="l_per_hr" constant="true">
+      <parameter metaid="meta_f" id="f" name="kabs relation to CL" value="NaN" units="dimensionless" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_f">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/5284371"/>
+                  <rdf:li rdf:resource="http://identifiers.org/CHEBI:16714"/>
+                  <rdf:li rdf:resource="http://identifiers.org/ncit/C383"/>
+                  <rdf:li rdf:resource="http://identifiers.org/inchikey/OROGSEYTTFOCAN-DNJOTXNNSA-N"/>
+                  <rdf:li rdf:resource="http://identifiers.org/snomed/387494007"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter metaid="meta_kabs" sboTerm="SBO:0000009" id="kabs" name="absorption rate" value="0.01" units="l_per_hr" constant="false">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_kabs">
@@ -349,6 +366,15 @@ FOR A PARTICULAR PURPOSE.</p></body>
             <ci> cod_cent </ci>
             <ci> Mr_cod </ci>
             <ci> conc_conversion </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="kabs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> f </ci>
+            <ci> CL </ci>
           </apply>
         </math>
       </assignmentRule>

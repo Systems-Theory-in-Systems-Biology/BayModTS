@@ -17,25 +17,26 @@ Q = 0.1  # [l/hr]
 Vcent = 0.00232  # [l] 
 Vgut = 0.00145  # [l] 
 Vperi = 0.02523  # [l] 
-conc_conversion = 1000.0  # [ng/Âµg] 
-kabs = 0.01  # [l/hr] 
+conc_conversion = 1000.0  # [ng/µg] 
+f = nan  # [-] 
 ```
 
 ## Initial conditions `x0`
 ```
 mid_cent = 0.0  # [mmol/l] Vcent
-mid_gut = 0.306936771025169  # [mmol/l] Vgut
+mid_gut = 0.12277470841006759  # [mmol/l] Vgut
 mid_peri = 0.0  # [mmol/l] Vperi
 ```
 
 ## ODE system
 ```
 # y
-ABSORPTION = kabs * mid_gut  # [mmol/hr]
 CLEARANCE = CL * mid_cent  # [mmol/hr]
 R1 = Q * mid_cent  # [mmol/hr]
 R2 = Q * mid_peri  # [mmol/hr]
+kabs = f * CL  # [l/hr]
 mid_plasma = mid_cent * Mr_mid * conc_conversion  # [mg/ml]
+ABSORPTION = kabs * mid_gut  # [mmol/hr]
 
 # odes
 d mid_cent/dt = (ABSORPTION / Vcent - CLEARANCE / Vcent - R1 / Vcent) + R2 / Vcent  # [mmol/l/hr]

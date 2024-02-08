@@ -1,6 +1,7 @@
 """Caffeine, codeine, midazolam PK model."""
 from dataclasses import dataclass
 from pathlib import Path
+import os
 
 from sbmlutils.console import console
 from sbmlutils.converters import odefac
@@ -8,9 +9,9 @@ from sbmlutils.cytoscape import visualize_sbml
 from sbmlutils.examples.templates import terms_of_use
 from sbmlutils.factory import *
 from sbmlutils.metadata import *
-from pk_models.models import annotations
+import annotations
 
-from pk_models.models.templates import create_pk_model
+from templates import create_pk_model
 
 
 class U(Units):
@@ -157,12 +158,22 @@ def create_model_from_info(
             constant=False,
             annotations=annotations.species[sid],
             # sboTerm=SBO.SYSTEMS_DESCRIPTION_PARAMETER,
+        ),
+        Parameter(
+            f"f", NaN, unit=U.dimensionless,
+            name=f"kabs relation to CL",
+            constant=True,
+            annotations=annotations.species[sid],
+            # sboTerm=SBO.SYSTEMS_DESCRIPTION_PARAMETER,
         )
     ]
 
     _m.rules = [
         AssignmentRule(
             f"{sid}_plasma", f"{sid}_cent * Mr_{sid} * conc_conversion"  # [mmole/l]*[g/mole]=[µg/ml] -> [ng/ml]
+        ),
+        AssignmentRule(
+            f"kabs", f"f * CL"  # Kapp = fapp*CL with f in [100, ...1000]
         )
     ]
 
@@ -182,6 +193,7 @@ def create_model_from_info(
                     sid="kabs",
                     name="absorption rate",
                     value=1E-2,
+                    constant=False,
                     unit=U.l_per_hr,
                     sboTerm=SBO.KINETIC_CONSTANT,
                 ),
@@ -244,7 +256,6 @@ def create_model_from_info(
 
 
 if __name__ == "__main__":
-    from pk_models import MODELS_DIR
 
     @dataclass
     class ModelInfo:
@@ -277,7 +288,7 @@ if __name__ == "__main__":
         _m = create_model_from_info(sid=info.sid, name=info.name, Mr=info.Mr, dose_bw=info.dose_bw)
         create_pk_model(
             model=_m,
-            models_dir=MODELS_DIR,
+            models_dir=os.path.join(Path(__file__).parent, 'results/'),
             equations=True,
             visualize=True,
             delete_session=False

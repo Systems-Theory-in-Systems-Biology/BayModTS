@@ -17,8 +17,8 @@ Q = 0.1  # [l/hr]
 Vcent = 0.00232  # [l] 
 Vgut = 0.00145  # [l] 
 Vperi = 0.02523  # [l] 
-conc_conversion = 1000.0  # [ng/Âµg] 
-kabs = 0.01  # [l/hr] 
+conc_conversion = 1000.0  # [ng/µg] 
+f = nan  # [-] 
 ```
 
 ## Initial conditions `x0`
@@ -31,11 +31,12 @@ cod_peri = 0.0  # [mmol/l] Vperi
 ## ODE system
 ```
 # y
-ABSORPTION = kabs * cod_gut  # [mmol/hr]
 CLEARANCE = CL * cod_cent  # [mmol/hr]
 R1 = Q * cod_cent  # [mmol/hr]
 R2 = Q * cod_peri  # [mmol/hr]
 cod_plasma = cod_cent * Mr_cod * conc_conversion  # [mg/ml]
+kabs = f * CL  # [l/hr]
+ABSORPTION = kabs * cod_gut  # [mmol/hr]
 
 # odes
 d cod_cent/dt = (ABSORPTION / Vcent - CLEARANCE / Vcent - R1 / Vcent) + R2 / Vcent  # [mmol/l/hr]
