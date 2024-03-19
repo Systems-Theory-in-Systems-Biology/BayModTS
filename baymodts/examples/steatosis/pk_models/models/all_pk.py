@@ -1,6 +1,7 @@
 """Caffeine, codeine, midazolam PK model."""
 from dataclasses import dataclass
 from pathlib import Path
+import os
 
 from sbmlutils.console import console
 from sbmlutils.converters import odefac
@@ -8,9 +9,9 @@ from sbmlutils.cytoscape import visualize_sbml
 from sbmlutils.examples.templates import terms_of_use
 from sbmlutils.factory import *
 from sbmlutils.metadata import *
-from pk_models.models import annotations
+import annotations
 
-from pk_models.models.templates import create_pk_model
+from templates import create_pk_model
 
 
 class U(Units):
@@ -55,6 +56,13 @@ def create_model_from_info(
                 email="koenigmx@hu-berlin.de",
                 organization="Humboldt-University Berlin, Institute for Theoretical Biology",
                 site="https://livermetabolism.com",
+            ),
+            Creator(
+                familyName="Höpfl",
+                givenName="Sebastian",
+                email="sebastian.hoepfl@isa.uni-stuttgart.de",
+                organization="University of Stuttgart, Institute for Stochastics and Applications",
+                site="https://github.com/shoepfl",
             ),
         ],
         units=U,
@@ -111,7 +119,7 @@ def create_model_from_info(
             sid=f"{sid}_gut",
             name=f"{name} gut",
             compartment="Vgut",
-            initialAmount=dose_bw * bodyweight / Mr,  # 2 [mg/kg] * 0.029 [kg] / 194.19 [g/mole] = 0.0002986 [mmole]
+            initialAmount=0,  # dose_bw * bodyweight / Mr
             hasOnlySubstanceUnits=False,
             substanceUnit=U.mmole,
             sboTerm=SBO.SIMPLE_CHEMICAL,
@@ -163,10 +171,30 @@ def create_model_from_info(
     _m.rules = [
         AssignmentRule(
             f"{sid}_plasma", f"{sid}_cent * Mr_{sid} * conc_conversion"  # [mmole/l]*[g/mole]=[µg/ml] -> [ng/ml]
-        )
+        ),
     ]
 
     _m.reactions = [
+        Reaction(
+            sid="APPLICATION",
+            name=f"application {name}",
+            equation=f"-> {sid}_gut",
+            formula=f"(166.989 * {dose_bw} * {bodyweight} / {Mr}) * (1 - exp(-time/tau))*exp(-time/tau)",
+            sboTerm=SBO.BIOCHEMICAL_REACTION,
+            notes="""
+            [mmole/hr]
+            absorption from gut
+            """,
+            pars=[
+                Parameter(
+                    sid="tau",
+                    name="response time",
+                    value=0.012,
+                    unit=U.hr,
+                    sboTerm=SBO.KINETIC_CONSTANT,
+                ),
+            ],
+        ),
         Reaction(
             sid="ABSORPTION",
             name=f"absorption {name}",
@@ -244,7 +272,6 @@ def create_model_from_info(
 
 
 if __name__ == "__main__":
-    from pk_models import MODELS_DIR
 
     @dataclass
     class ModelInfo:
@@ -277,7 +304,7 @@ if __name__ == "__main__":
         _m = create_model_from_info(sid=info.sid, name=info.name, Mr=info.Mr, dose_bw=info.dose_bw)
         create_pk_model(
             model=_m,
-            models_dir=MODELS_DIR,
+            models_dir=os.path.join(Path(__file__).parent, 'results/'),
             equations=True,
             visualize=True,
             delete_session=False

@@ -1,0 +1,2 @@
+observableId	observableName	observableFormula	noiseFormula	noiseDistribution
+cod_plasma_obs	codeine plasma (ng/ml)	cod_plasma	noiseParameter1_cod_plasma_obs	normal

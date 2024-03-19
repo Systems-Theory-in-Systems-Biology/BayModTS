@@ -10,6 +10,7 @@ import pandas as pd
 import numpy as np
 import yaml
 import matplotlib.pyplot as plt
+import seaborn as sns
 import os
 
 import amici
@@ -34,13 +35,13 @@ from pypesto.C import CONDITION, OUTPUT
 
 model_name = 'rtd_steatosis'
 
-Substances = ['codeine'] #'caffeine', 'midazolam', 
+Substances = ['caffeine', 'midazolam', 'codeine']
 
 p = Path(__file__).parent
-Path_to_measurement_files = os.path.join(p, 'measurement_files/')
+Path_to_measurement_files = os.path.join(p, 'measurement_files_pk/')
 
 import sys
-sys.path.append(os.path.join(p.parent.parent.parent, 'Python/BayModTS/'))
+sys.path.append(os.path.join(p.parent.parent.parent, 'core/'))
 from sampling_all_conditions import sampling_prediction_trajectories
 
 # colors for ensemble plots
@@ -183,13 +184,13 @@ class PEtab_problem:
         
         petab_yaml_dict = {'format_version': 1,
                            'parameter_file': f'parameter_{self.substance}_pk.tsv',
-                           'problems': [{'sbml_files': [f'{self.substance}_pk.xml']}]} # _identical_response_times
+                           'problems': [{'sbml_files': [f'models/results/{self.substance}_pk.xml']}]} # _identical_response_times
         petab_yaml_dict['problems'][0]['observable_files'] = \
             [f'observables_{self.substance}_pk.tsv']
         petab_yaml_dict['problems'][0]['condition_files'] = \
             [f'experimental_conditions_rtd_steatosis.tsv']  # are not dependent on model
         petab_yaml_dict['problems'][0]['measurement_files'] = \
-            [f'measurement_files/{self.substance}_{self.condition}_measurement_table.tsv']
+            [f'measurement_files_pk/{self.substance}_{self.condition}_measurement_table.tsv']
 
         with open(os.path.join(p, f'{self.substance}_pk_{self.condition}.yaml'), 'w+') as file:
             yaml.dump(petab_yaml_dict, file)
@@ -213,7 +214,7 @@ class PEtab_problem:
         objective.amici_solver.setRelativeTolerance(1e-10)
         objective.amici_solver.setMaxSteps(100000)
         
-        problem = importer.create_problem(force_compile=True)
+        problem = importer.create_problem(force_compile=False)
         
         #  optimizer = optimize.FidesOptimizer()
         optimizer = optimize.ScipyOptimizer(method='powell')
@@ -375,23 +376,35 @@ class PEtab_problem:
         credibility_interval_levels = [ci]
 
         # global plot configurations
-        plt.rcParams['xtick.labelsize'] = 20
-        plt.rcParams['ytick.labelsize'] = 20
-        plt.rcParams['axes.labelsize'] = 24
+        plt.rcParams['xtick.labelsize'] = 30
+        plt.rcParams['ytick.labelsize'] = 30
+        plt.rcParams['axes.labelsize'] = 33
         plt.rcParams['lines.linewidth'] = 4
         plt.rcParams["font.weight"] = "normal"
         plt.rcParams["axes.labelweight"] = "bold"
-        plt.rcParams['axes.titlesize'] = 22
-        plt.rcParams['figure.titleweight'] = 'bold'  # before out
+        plt.rcParams['axes.titlesize'] = 36
+        plt.rcParams['axes.titleweight'] = "bold"
         plt.rcParams['figure.figsize'] = (12, 12)
         plt.rcParams['legend.title_fontsize'] = 'x-large'
-        plt.rcParams['legend.fontsize'] = 'xx-large'  # before out
+        plt.rcParams['legend.fontsize'] = 20
 
-        ax = sampling_prediction_trajectories(
+        fig, ax = plt.subplots()
+
+        # Plot experimental data
+        Current_data = Measurement_data(self.substance, self.condition)
+        Current_data.create_measurement_df(path=Path_to_measurement_files)
+        sns.boxplot(x='time', y='measurement', data=Current_data.measurement_df,
+                    whis=1.5, fill=False, color=median_colors[self.condition],
+                    saturation=2, boxprops={'alpha':.6}, native_scale=True, ax=ax)
+        #sns.stripplot(x='time', y = 'measurement', data=Current_data.measurement_df, size=10,
+        #              color=median_colors[self.condition], edgecolor='k',
+        #              linewidth=1, alpha=.6, dodge=True, native_scale=True, ax=ax)
+
+        sampling_prediction_trajectories(
             self.ensemble_prediction,
             levels=credibility_interval_levels,
-            # size=(29,17),
-            labels={'condition_0': 'cond_1'},
+            axes=ax,
+            #labels={'condition_0': self.condition},
             axis_label_padding=60,
             alpha_credibility=0.5,
             groupby=CONDITION,
@@ -400,20 +413,15 @@ class PEtab_problem:
             color_add=color_add[self.condition],
             median_color=median_colors[self.condition]
         )
-
-        # Plot experimental data
-        Current_data = Measurement_data(self.substance, self.condition)
-        Current_data.create_measurement_df(path=Path_to_measurement_files)
-        plt.plot(np.repeat(Current_data.t, Current_data.number_of_replicates),
-                Current_data.measurement_df['measurement'].to_numpy(),
-                marker='+', color='k', linestyle='', markersize=20)
-        plt.title(f'{self.substance} {self.condition}')
+        
         # axis labels
         plt.xlabel('time (h)')
         plt.ylabel(f'plasma {self.substance} (ng/ml)')
 
-        plt.setp(ax[0, 0].get_xticklabels(), rotation=60,
+        plt.ylim([0.0, Current_data.df.max(numeric_only=True).max()*1.05])
+        plt.setp(ax.get_xticklabels(), rotation=60,
                  horizontalalignment='center')
+        ax.get_figure().gca().set_title('')  # remove automatic titles
         plt.tight_layout()
         plt.savefig(os.path.join(p, f'results_pk/{self.substance}_{self.condition}_ensemble_output_predictions.png'))
 
@@ -468,9 +476,11 @@ def all_conditions_plot(UQ_control_object, UQ_2Wks_object, UQ_4Wks_object):
     # axis labels
     plt.xlabel('time (h)')  
     plt.ylabel(f'plasma {UQ_control_object.substance} (ng/ml)')
+    plt.ylim([0.0, Current_data.df.max(numeric_only=True).max()*1.05])
     # plt.legend(prop={'size': 16})
     plt.legend([],[], frameon=False)
     plt.setp(ax.get_xticklabels(), rotation=60, horizontalalignment='center')
+    ax.get_figure().gca().set_title('')  # remove automatic titles
     plt.tight_layout()
 
     plt.savefig(os.path.join(p, f'results_pk/{UQ_control_object.substance}_all_ensemble_output_predictions.png'))

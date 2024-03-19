@@ -19,12 +19,13 @@ Vgut = 0.00145  # [l]
 Vperi = 0.02523  # [l] 
 conc_conversion = 1000.0  # [ng/µg] 
 kabs = 0.01  # [l/hr] 
+tau = 0.012  # [hr] 
 ```
 
 ## Initial conditions `x0`
 ```
 cod_cent = 0.0  # [mmol/l] Vcent
-cod_gut = 0.13360053440213793  # [mmol/l] Vgut
+cod_gut = 0.0  # [mmol/l] Vgut
 cod_peri = 0.0  # [mmol/l] Vperi
 ```
 
@@ -32,6 +33,7 @@ cod_peri = 0.0  # [mmol/l] Vperi
 ```
 # y
 ABSORPTION = kabs * cod_gut  # [mmol/hr]
+APPLICATION = (166.989 * 2 * 0.029 / 299.4) * (1 - exp(-time / tau)) * exp(-time / tau)  # [mmol/hr]
 CLEARANCE = CL * cod_cent  # [mmol/hr]
 R1 = Q * cod_cent  # [mmol/hr]
 R2 = Q * cod_peri  # [mmol/hr]
@@ -39,6 +41,6 @@ cod_plasma = cod_cent * Mr_cod * conc_conversion  # [mg/ml]
 
 # odes
 d cod_cent/dt = (ABSORPTION / Vcent - CLEARANCE / Vcent - R1 / Vcent) + R2 / Vcent  # [mmol/l/hr]
-d cod_gut/dt = -ABSORPTION / Vgut  # [mmol/l/hr]
+d cod_gut/dt = APPLICATION / Vgut - ABSORPTION / Vgut  # [mmol/l/hr]
 d cod_peri/dt = R1 / Vperi - R2 / Vperi  # [mmol/l/hr]
 ```
