@@ -107,7 +107,7 @@ class Measurement_data:
         observable_array = ['y_obs' for i in range(self.number_of_replicates * len(self.t))]
         simulation_cond_array = ['condition1' for i in range(self.number_of_replicates * len(self.t))]
         noiseParameters_array = ['sd1_y_obs' for i in range(self.number_of_replicates * len(self.t))]
-        replicateId_array = [id for id in range(self.number_of_replicates) for timepoints in range(len(self.t)) ]
+        replicateId_array = [timepoint for timepoint in range(len(self.t)) for replicate in range(self.number_of_replicates)]
 
         # time array for all replicates
         tn = np.repeat(self.t, self.number_of_replicates)
