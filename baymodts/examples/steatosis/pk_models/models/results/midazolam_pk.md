@@ -19,12 +19,13 @@ Vgut = 0.00145  # [l]
 Vperi = 0.02523  # [l] 
 conc_conversion = 1000.0  # [ng/µg] 
 kabs = 0.01  # [l/hr] 
+tau = 0.012  # [hr] 
 ```
 
 ## Initial conditions `x0`
 ```
 mid_cent = 0.0  # [mmol/l] Vcent
-mid_gut = 0.306936771025169  # [mmol/l] Vgut
+mid_gut = 0.0  # [mmol/l] Vgut
 mid_peri = 0.0  # [mmol/l] Vperi
 ```
 
@@ -32,6 +33,7 @@ mid_peri = 0.0  # [mmol/l] Vperi
 ```
 # y
 ABSORPTION = kabs * mid_gut  # [mmol/hr]
+APPLICATION = (166.989 * 2 * 0.029 / 325.8) * (1 - exp(-time / tau)) * exp(-time / tau)  # [mmol/hr]
 CLEARANCE = CL * mid_cent  # [mmol/hr]
 R1 = Q * mid_cent  # [mmol/hr]
 R2 = Q * mid_peri  # [mmol/hr]
@@ -39,6 +41,6 @@ mid_plasma = mid_cent * Mr_mid * conc_conversion  # [mg/ml]
 
 # odes
 d mid_cent/dt = (ABSORPTION / Vcent - CLEARANCE / Vcent - R1 / Vcent) + R2 / Vcent  # [mmol/l/hr]
-d mid_gut/dt = -ABSORPTION / Vgut  # [mmol/l/hr]
+d mid_gut/dt = APPLICATION / Vgut - ABSORPTION / Vgut  # [mmol/l/hr]
 d mid_peri/dt = R1 / Vperi - R2 / Vperi  # [mmol/l/hr]
 ```

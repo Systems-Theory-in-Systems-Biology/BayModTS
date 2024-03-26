@@ -1,0 +1,11 @@
+format_version: 1
+parameter_file: parameter_caffeine_pk.tsv
+problems:
+- condition_files:
+  - experimental_conditions_rtd_steatosis.tsv
+  measurement_files:
+  - measurement_files_pk/caffeine_Control_measurement_table.tsv
+  observable_files:
+  - observables_caffeine_pk.tsv
+  sbml_files:
+  - models/results/caffeine_pk.xml

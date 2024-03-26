@@ -1,0 +1,9 @@
+ESS of caffeine_Control is 47405.852071970396 
+ESS of caffeine_2Wks is 37243.56812440815 
+ESS of caffeine_4Wks is 111.9086091604622 
+ESS of codeine_Control is 42547.4313634584 
+ESS of codeine_2Wks is 32180.654697400096 
+ESS of codeine_4Wks is 50871.21414151046 
+ESS of midazolam_Control is 32318.21759193218 
+ESS of midazolam_2Wks is 38284.78382891113 
+ESS of midazolam_4Wks is 36252.905453560736 
