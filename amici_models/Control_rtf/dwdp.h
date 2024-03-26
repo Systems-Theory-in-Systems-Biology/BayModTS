@@ -1,0 +1,5 @@
+#define damici_y_dAsus dwdp[0]
+#define damici_y_dAtrans dwdp[1]
+#define damici_y_dt1 dwdp[2]
+#define damici_y_dt11 dwdp[3]
+#define damici_y_dt2 dwdp[4]

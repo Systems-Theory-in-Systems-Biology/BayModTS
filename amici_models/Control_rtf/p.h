@@ -1,0 +1,6 @@
+#define Asus p[0]
+#define Atrans p[1]
+#define t1 p[2]
+#define t11 p[3]
+#define t2 p[4]
+#define noiseParameter1_y_obs p[5]
