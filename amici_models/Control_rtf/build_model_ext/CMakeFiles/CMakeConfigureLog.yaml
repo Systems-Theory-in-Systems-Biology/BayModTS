@@ -1,0 +1,1216 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      The system is: Linux - 5.15.146.1-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc 
+      Build flags: -march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/home/basti/miniconda3/envs/amici/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ 
+      Build flags: -fvisibility-inlines-hidden;-std=c++17;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/home/basti/miniconda3/envs/amici/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-gQwXwY"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-gQwXwY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-gQwXwY'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_d25bd
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include    -v -o CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o -c /home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+        COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc
+        Target: x86_64-conda-linux-gnu
+        Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (Anaconda gcc) 
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-v' '-o' 'CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_d25bd.dir/'
+         /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1 -quiet -v -iprefix /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot -isystem /home/basti/miniconda3/envs/amici/include /home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d25bd.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o
+        GNU assembler version 2.38 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.38
+        GNU C17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"
+        ignoring nonexistent directory "/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot/include"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/basti/miniconda3/envs/amici/include
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include
+         /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        GNU C17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: e1e0bc17a565350666787f1586df2119
+        COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-v' '-o' 'CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib -v CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o -o cmTC_d25bd   && :
+        Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+        COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc
+        COLLECT_LTO_WRAPPER=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (Anaconda gcc) 
+        COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-L/home/basti/miniconda3/envs/amici/lib' '-v' '-o' 'cmTC_d25bd' '-dumpdir' 'cmTC_d25bd.'
+         /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cce10zAC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d25bd /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o -L/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -rpath /home/basti/miniconda3/envs/amici/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/basti/miniconda3/envs/amici/lib -rpath-link /home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-L/home/basti/miniconda3/envs/amici/lib' '-v' '-o' 'cmTC_d25bd' '-dumpdir' 'cmTC_d25bd.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/basti/miniconda3/envs/amici/include]
+          add: [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+          add: [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+          add: [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+          add: [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/basti/miniconda3/envs/amici/include] ==> [/home/basti/miniconda3/envs/amici/include]
+        collapse include dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+        collapse include dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+        collapse include dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/include]
+        collapse include dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/basti/miniconda3/envs/amici/include;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/include;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-gQwXwY']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_d25bd]
+        ignore line: [[1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include    -v -o CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o -c /home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+        ignore line: [COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (Anaconda gcc) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-v' '-o' 'CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_d25bd.dir/']
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1 -quiet -v -iprefix /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot -isystem /home/basti/miniconda3/envs/amici/include /home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d25bd.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o]
+        ignore line: [GNU assembler version 2.38 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.38]
+        ignore line: [GNU C17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot/include"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/basti/miniconda3/envs/amici/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: e1e0bc17a565350666787f1586df2119]
+        ignore line: [COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-v' '-o' 'CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl -rpath /home/basti/miniconda3/envs/amici/lib -Wl -rpath-link /home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib -v CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o -o cmTC_d25bd   && :]
+        ignore line: [Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+        ignore line: [COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (Anaconda gcc) ]
+        ignore line: [COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-L/home/basti/miniconda3/envs/amici/lib' '-v' '-o' 'cmTC_d25bd' '-dumpdir' 'cmTC_d25bd.']
+        link line: [ /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cce10zAC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d25bd /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o -L/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -rpath /home/basti/miniconda3/envs/amici/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/basti/miniconda3/envs/amici/lib -rpath-link /home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+          arg [/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cce10zAC.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d25bd] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o] ==> obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o]
+          arg [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o]
+          arg [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o] ==> obj [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o]
+          arg [-L/home/basti/miniconda3/envs/amici/lib] ==> dir [/home/basti/miniconda3/envs/amici/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-rpath] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [CMakeFiles/cmTC_d25bd.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o] ==> obj [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o]
+          arg [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+        collapse obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crt1.o]
+        collapse obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o]
+        collapse obj [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o]
+        collapse obj [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o]
+        collapse obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        collapse library dir [/home/basti/miniconda3/envs/amici/lib] ==> [/home/basti/miniconda3/envs/amici/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc] ==> [/home/basti/miniconda3/envs/amici/lib/gcc]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crt1.o;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        implicit dirs: [/home/basti/miniconda3/envs/amici/lib;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0;/home/basti/miniconda3/envs/amici/lib/gcc;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-1i95JJ"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-1i95JJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-1i95JJ'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_0e2a4
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include    -v -o CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o -c /home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+        COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++
+        Target: x86_64-conda-linux-gnu
+        Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (Anaconda gcc) 
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-v' '-o' 'CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_0e2a4.dir/'
+         /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /home/basti/miniconda3/envs/amici/include /home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0e2a4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -std=c++17 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o
+        GNU assembler version 2.38 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.38
+        GNU C++17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"
+        ignoring nonexistent directory "/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot/include"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/basti/miniconda3/envs/amici/include
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include
+         /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        GNU C++17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: dcd220e6e6985dc6323f6310e48ad8dd
+        COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-v' '-o' 'CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib -v CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0e2a4   && :
+        Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+        COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++
+        COLLECT_LTO_WRAPPER=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (Anaconda gcc) 
+        COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-L/home/basti/miniconda3/envs/amici/lib' '-v' '-o' 'cmTC_0e2a4' '-shared-libgcc' '-dumpdir' 'cmTC_0e2a4.'
+         /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEmv6QP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0e2a4 /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o -L/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -rpath /home/basti/miniconda3/envs/amici/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/basti/miniconda3/envs/amici/lib -rpath-link /home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-L/home/basti/miniconda3/envs/amici/lib' '-v' '-o' 'cmTC_0e2a4' '-shared-libgcc' '-dumpdir' 'cmTC_0e2a4.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/basti/miniconda3/envs/amici/include]
+          add: [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0]
+          add: [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+          add: [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+          add: [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+          add: [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+          add: [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+          add: [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/basti/miniconda3/envs/amici/include] ==> [/home/basti/miniconda3/envs/amici/include]
+        collapse include dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/include/c++/11.2.0]
+        collapse include dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+        collapse include dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+        collapse include dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+        collapse include dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+        collapse include dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/include]
+        collapse include dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/basti/miniconda3/envs/amici/include;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/include/c++/11.2.0;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/include/c++/11.2.0/backward;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/include;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-1i95JJ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_0e2a4]
+        ignore line: [[1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include    -v -o CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o -c /home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+        ignore line: [COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (Anaconda gcc) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-v' '-o' 'CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_0e2a4.dir/']
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /home/basti/miniconda3/envs/amici/include /home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0e2a4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -std=c++17 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [GNU assembler version 2.38 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.38]
+        ignore line: [GNU C++17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot/include"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/basti/miniconda3/envs/amici/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: dcd220e6e6985dc6323f6310e48ad8dd]
+        ignore line: [COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-v' '-o' 'CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl -rpath /home/basti/miniconda3/envs/amici/lib -Wl -rpath-link /home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib -v CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0e2a4   && :]
+        ignore line: [Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+        ignore line: [COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (Anaconda gcc) ]
+        ignore line: [COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-L/home/basti/miniconda3/envs/amici/lib' '-v' '-o' 'cmTC_0e2a4' '-shared-libgcc' '-dumpdir' 'cmTC_0e2a4.']
+        link line: [ /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEmv6QP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0e2a4 /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o -L/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -rpath /home/basti/miniconda3/envs/amici/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/basti/miniconda3/envs/amici/lib -rpath-link /home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+          arg [/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccEmv6QP.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_0e2a4] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o] ==> obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o]
+          arg [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o]
+          arg [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o] ==> obj [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o]
+          arg [-L/home/basti/miniconda3/envs/amici/lib] ==> dir [/home/basti/miniconda3/envs/amici/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-rpath] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [CMakeFiles/cmTC_0e2a4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o] ==> obj [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o]
+          arg [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+        collapse obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crt1.o]
+        collapse obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o]
+        collapse obj [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o]
+        collapse obj [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o]
+        collapse obj [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        collapse library dir [/home/basti/miniconda3/envs/amici/lib] ==> [/home/basti/miniconda3/envs/amici/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc] ==> [/home/basti/miniconda3/envs/amici/lib/gcc]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crt1.o;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        implicit dirs: [/home/basti/miniconda3/envs/amici/lib;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0;/home/basti/miniconda3/envs/amici/lib/gcc;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:23 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CUR_FLAG_SUPPORTED"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-zFyBlw"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-zFyBlw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CUR_FLAG_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-zFyBlw'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_214a4
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -DCUR_FLAG_SUPPORTED  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include  -std=c++17 -fPIE   -Wall -o CMakeFiles/cmTC_214a4.dir/src.cxx.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-zFyBlw/src.cxx
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_214a4.dir/src.cxx.o -o cmTC_214a4   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:23 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CUR_FLAG_SUPPORTED"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-1WC3zl"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-1WC3zl"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CUR_FLAG_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-1WC3zl'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_9d5f2
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -DCUR_FLAG_SUPPORTED  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall  -std=c++17 -fPIE   -Wno-unused-function -o CMakeFiles/cmTC_9d5f2.dir/src.cxx.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-1WC3zl/src.cxx
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_9d5f2.dir/src.cxx.o -o cmTC_9d5f2   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:23 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CUR_FLAG_SUPPORTED"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-qm5y9V"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-qm5y9V"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CUR_FLAG_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-qm5y9V'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_7d59f
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -DCUR_FLAG_SUPPORTED  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function  -std=c++17 -fPIE   -Wno-unused-variable -o CMakeFiles/cmTC_7d59f.dir/src.cxx.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-qm5y9V/src.cxx
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_7d59f.dir/src.cxx.o -o cmTC_7d59f   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:23 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CUR_FLAG_SUPPORTED"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-e9AjNL"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-e9AjNL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CUR_FLAG_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-e9AjNL'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_bfd75
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -DCUR_FLAG_SUPPORTED  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable  -std=c++17 -fPIE   -Wno-unused-but-set-variable -o CMakeFiles/cmTC_bfd75.dir/src.cxx.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-e9AjNL/src.cxx
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_bfd75.dir/src.cxx.o -o cmTC_bfd75   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/Amici/AmiciConfig.cmake:29 (find_package)"
+      - "CMakeLists.txt:38 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-Mo3OdJ"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-Mo3OdJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-Mo3OdJ'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_8e0a0
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -fopenmp -v -fPIE -o CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-Mo3OdJ/OpenMPTryFlag.c
+        Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+        COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc
+        Target: x86_64-conda-linux-gnu
+        Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (Anaconda gcc) 
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_8e0a0.dir/'
+         /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1 -quiet -v -iprefix /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot -D_REENTRANT -isystem /home/basti/miniconda3/envs/amici/include /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-Mo3OdJ/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_8e0a0.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -fPIE -o - |
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o
+        GNU assembler version 2.38 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.38
+        GNU C17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"
+        ignoring nonexistent directory "/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot/include"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/basti/miniconda3/envs/amici/include
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include
+         /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        GNU C17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: e1e0bc17a565350666787f1586df2119
+        COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.'
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -fopenmp -v -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o -o cmTC_8e0a0  -v && :
+        Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+        COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc
+        COLLECT_LTO_WRAPPER=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (Anaconda gcc) 
+        COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/libgomp.spec
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-fopenmp' '-v' '-L/home/basti/miniconda3/envs/amici/lib' '-o' 'cmTC_8e0a0' '-v' '-pthread' '-dumpdir' 'cmTC_8e0a0.'
+         /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1mY7Zs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8e0a0 /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o -L/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -rpath /home/basti/miniconda3/envs/amici/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/basti/miniconda3/envs/amici/lib -rpath-link /home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-fopenmp' '-v' '-L/home/basti/miniconda3/envs/amici/lib' '-o' 'cmTC_8e0a0' '-v' '-pthread' '-dumpdir' 'cmTC_8e0a0.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:262 (message)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/Amici/AmiciConfig.cmake:29 (find_package)"
+      - "CMakeLists.txt:38 (find_package)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-Mo3OdJ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_8e0a0]
+        ignore line: [[1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -fopenmp -v -fPIE -o CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-Mo3OdJ/OpenMPTryFlag.c]
+        ignore line: [Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+        ignore line: [COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (Anaconda gcc) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_8e0a0.dir/']
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1 -quiet -v -iprefix /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot -D_REENTRANT -isystem /home/basti/miniconda3/envs/amici/include /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-Mo3OdJ/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_8e0a0.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -fPIE -o - |]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o]
+        ignore line: [GNU assembler version 2.38 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.38]
+        ignore line: [GNU C17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot/include"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/basti/miniconda3/envs/amici/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: e1e0bc17a565350666787f1586df2119]
+        ignore line: [COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.']
+        ignore line: [[2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -fopenmp -v -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl -rpath /home/basti/miniconda3/envs/amici/lib -Wl -rpath-link /home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o -o cmTC_8e0a0  -v && :]
+        ignore line: [Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+        ignore line: [COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (Anaconda gcc) ]
+        ignore line: [COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-fopenmp' '-v' '-L/home/basti/miniconda3/envs/amici/lib' '-o' 'cmTC_8e0a0' '-v' '-pthread' '-dumpdir' 'cmTC_8e0a0.']
+        link line: [ /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1mY7Zs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8e0a0 /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o -L/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -rpath /home/basti/miniconda3/envs/amici/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/basti/miniconda3/envs/amici/lib -rpath-link /home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+          arg [/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc1mY7Zs.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8e0a0] ==> ignore
+          arg [-L/home/basti/miniconda3/envs/amici/lib] ==> dir [/home/basti/miniconda3/envs/amici/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-rpath] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [CMakeFiles/cmTC_8e0a0.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+        collapse library dir [/home/basti/miniconda3/envs/amici/lib] ==> [/home/basti/miniconda3/envs/amici/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc] ==> [/home/basti/miniconda3/envs/amici/lib/gcc]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/home/basti/miniconda3/envs/amici/lib;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0;/home/basti/miniconda3/envs/amici/lib/gcc;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/Amici/AmiciConfig.cmake:29 (find_package)"
+      - "CMakeLists.txt:38 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-etnYy9"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-etnYy9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-etnYy9'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_52228
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -fopenmp -v -std=c++17 -fPIE -o CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-etnYy9/OpenMPTryFlag.cpp
+        Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+        COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++
+        Target: x86_64-conda-linux-gnu
+        Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (Anaconda gcc) 
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-Wall' '-Wno-unused-function' '-Wno-unused-variable' '-Wno-unused-but-set-variable' '-fopenmp' '-v' '-std=c++17' '-fPIE' '-o' 'CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_52228.dir/'
+         /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D_REENTRANT -isystem /home/basti/miniconda3/envs/amici/include /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-etnYy9/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_52228.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -std=c++17 -std=c++17 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -fPIE -o - |
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o
+        GNU assembler version 2.38 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.38
+        GNU C++17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"
+        ignoring nonexistent directory "/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot/include"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"
+        ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/basti/miniconda3/envs/amici/include
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed
+         /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include
+         /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        GNU C++17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: dcd220e6e6985dc6323f6310e48ad8dd
+        COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-Wall' '-Wno-unused-function' '-Wno-unused-variable' '-Wno-unused-but-set-variable' '-fopenmp' '-v' '-std=c++17' '-fPIE' '-o' 'CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.'
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -fopenmp -v -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o -o cmTC_52228  -v && :
+        Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+        COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++
+        COLLECT_LTO_WRAPPER=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (Anaconda gcc) 
+        COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-Wall' '-Wno-unused-function' '-Wno-unused-variable' '-Wno-unused-but-set-variable' '-fopenmp' '-v' '-L/home/basti/miniconda3/envs/amici/lib' '-o' 'cmTC_52228' '-v' '-shared-libgcc' '-pthread' '-dumpdir' 'cmTC_52228.'
+         /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMzBS0J.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_52228 /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o -L/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -rpath /home/basti/miniconda3/envs/amici/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/basti/miniconda3/envs/amici/lib -rpath-link /home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-Wall' '-Wno-unused-function' '-Wno-unused-variable' '-Wno-unused-but-set-variable' '-fopenmp' '-v' '-L/home/basti/miniconda3/envs/amici/lib' '-o' 'cmTC_52228' '-v' '-shared-libgcc' '-pthread' '-dumpdir' 'cmTC_52228.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:262 (message)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/Amici/AmiciConfig.cmake:29 (find_package)"
+      - "CMakeLists.txt:38 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-etnYy9']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_52228]
+        ignore line: [[1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -fopenmp -v -std=c++17 -fPIE -o CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-etnYy9/OpenMPTryFlag.cpp]
+        ignore line: [Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+        ignore line: [COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (Anaconda gcc) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-Wall' '-Wno-unused-function' '-Wno-unused-variable' '-Wno-unused-but-set-variable' '-fopenmp' '-v' '-std=c++17' '-fPIE' '-o' 'CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_52228.dir/']
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D_REENTRANT -isystem /home/basti/miniconda3/envs/amici/include /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-etnYy9/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_52228.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -std=c++17 -std=c++17 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -fPIE -o - |]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [GNU assembler version 2.38 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.38]
+        ignore line: [GNU C++17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot/include"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/basti/miniconda3/envs/amici/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/basti/miniconda3/envs/amici/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+        ignore line: [ /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Anaconda gcc) version 11.2.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: dcd220e6e6985dc6323f6310e48ad8dd]
+        ignore line: [COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-Wall' '-Wno-unused-function' '-Wno-unused-variable' '-Wno-unused-but-set-variable' '-fopenmp' '-v' '-std=c++17' '-fPIE' '-o' 'CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.']
+        ignore line: [[2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -fopenmp -v -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl -rpath /home/basti/miniconda3/envs/amici/lib -Wl -rpath-link /home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o -o cmTC_52228  -v && :]
+        ignore line: [Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+        ignore line: [COLLECT_GCC=/home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: /opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc/configure --build=x86_64-build_conda-linux-gnu --host=x86_64-build_conda-linux-gnu --target=x86_64-conda-linux-gnu --prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --exec_prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built --with-sysroot=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --with-local-prefix=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/gcc_built/x86_64-conda-linux-gnu/sysroot --enable-long-long --disable-multilib --disable-nls --with-gmp=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpfr=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-mpc=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --with-isl=/opt/conda/conda-bld/gcc-compiler_1654084175708/work/buildtools --without-zstd --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --disable-libstdcxx-verbose --enable-lto --enable-libcc1 --enable-threads=posix --enable-plugin --with-pkgversion='Anaconda gcc' --enable-libmpx]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (Anaconda gcc) ]
+        ignore line: [COMPILER_PATH=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [Reading specs from /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/basti/miniconda3/envs/amici/include' '-Wall' '-Wno-unused-function' '-Wno-unused-variable' '-Wno-unused-but-set-variable' '-fopenmp' '-v' '-L/home/basti/miniconda3/envs/amici/lib' '-o' 'cmTC_52228' '-v' '-shared-libgcc' '-pthread' '-dumpdir' 'cmTC_52228.']
+        link line: [ /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMzBS0J.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_52228 /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crt1.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbegin.o -L/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -rpath /home/basti/miniconda3/envs/amici/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/basti/miniconda3/envs/amici/lib -rpath-link /home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtend.o /home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+          arg [/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/basti/miniconda3/envs/amici/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccMzBS0J.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_52228] ==> ignore
+          arg [-L/home/basti/miniconda3/envs/amici/lib] ==> dir [/home/basti/miniconda3/envs/amici/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-rpath] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/basti/miniconda3/envs/amici/lib] ==> ignore
+          arg [CMakeFiles/cmTC_52228.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/home/basti/miniconda3/envs/amici/lib] ==> [/home/basti/miniconda3/envs/amici/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> [/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc] ==> [/home/basti/miniconda3/envs/amici/lib/gcc]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/basti/miniconda3/envs/amici/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/home/basti/miniconda3/envs/amici/lib;/home/basti/miniconda3/envs/amici/lib/gcc/x86_64-conda-linux-gnu/11.2.0;/home/basti/miniconda3/envs/amici/lib/gcc;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib64;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/lib;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/lib;/home/basti/miniconda3/envs/amici/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/Amici/AmiciConfig.cmake:29 (find_package)"
+      - "CMakeLists.txt:38 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-JP84GB"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-JP84GB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-JP84GB'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_002b7
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -fopenmp -fPIE -o CMakeFiles/cmTC_002b7.dir/OpenMPCheckVersion.c.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-JP84GB/OpenMPCheckVersion.c
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -fopenmp -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_002b7.dir/OpenMPCheckVersion.c.o -o cmTC_002b7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/Amici/AmiciConfig.cmake:29 (find_package)"
+      - "CMakeLists.txt:38 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-ry870B"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-ry870B"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-ry870B'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_65569
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -fopenmp -std=c++17 -fPIE -o CMakeFiles/cmTC_65569.dir/OpenMPCheckVersion.cpp.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-ry870B/OpenMPCheckVersion.cpp
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -fopenmp -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_65569.dir/OpenMPCheckVersion.cpp.o -o cmTC_65569   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindHDF5.cmake:608 (_HDF5_test_regular_compiler_C)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/Amici/AmiciConfig.cmake:76 (find_package)"
+      - "CMakeLists.txt:38 (find_package)"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-3Y7wbH"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-3Y7wbH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse;/tmp/pip-install-ycfvoej1/amici_8ca2aecddddb411ca01edbf2fb2c771c/amici/ThirdParty/SuiteSparse/lib/cmake/SuiteSparse/"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-3Y7wbH'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_5a5f1
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include  -fPIE -o CMakeFiles/cmTC_5a5f1.dir/cmake_hdf5_test.c.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/hdf5/cmake_hdf5_test.c
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_5a5f1.dir/cmake_hdf5_test.c.o -o cmTC_5a5f1   && :
+        \x1b[31mFAILED: \x1b[0mcmTC_5a5f1 
+        : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_5a5f1.dir/cmake_hdf5_test.c.o -o cmTC_5a5f1   && :
+        /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/ld: CMakeFiles/cmTC_5a5f1.dir/cmake_hdf5_test.c.o: in function `main':
+        cmake_hdf5_test.c:(.text.startup.main+0x15): undefined reference to `H5check_version'
+        /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/ld: cmake_hdf5_test.c:(.text.startup.main+0x1b): undefined reference to `H5open'
+        /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/ld: cmake_hdf5_test.c:(.text.startup.main+0x31): undefined reference to `H5Fcreate'
+        collect2: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindHDF5.cmake:284 (try_compile)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/cmake/data/share/cmake-3.28/Modules/FindHDF5.cmake:614 (_HDF5_test_regular_compiler_CXX)"
+      - "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/Amici/AmiciConfig.cmake:76 (find_package)"
+      - "CMakeLists.txt:38 (find_package)"
+    directories:
+      source: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-EApnmc"
+      binary: "/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-EApnmc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib"
+      CMAKE_MODULE_PATH: "/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib/cmake/SuiteSparse;/home/basti/miniconda3/envs/amici/lib/python3.12/site-packages/amici/lib64/cmake/SuiteSparse;/tmp/pip-install-ycfvoej1/amici_8ca2aecddddb411ca01edbf2fb2c771c/amici/ThirdParty/SuiteSparse/lib/cmake/SuiteSparse/"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HDF5_CXX_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/CMakeScratch/TryCompile-EApnmc'
+        
+        Run Build Command(s): /home/basti/miniconda3/envs/amici/bin/ninja -v cmTC_eccf5
+        [1/2] /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable  -std=c++17 -fPIE -o CMakeFiles/cmTC_eccf5.dir/cmake_hdf5_test.cxx.o -c /mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        [2/2] : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_eccf5.dir/cmake_hdf5_test.cxx.o -o cmTC_eccf5   && :
+        \x1b[31mFAILED: \x1b[0mcmTC_eccf5 
+        : && /home/basti/miniconda3/envs/amici/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/basti/miniconda3/envs/amici/include -Wall -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/basti/miniconda3/envs/amici/lib -Wl,-rpath-link,/home/basti/miniconda3/envs/amici/lib -L/home/basti/miniconda3/envs/amici/lib CMakeFiles/cmTC_eccf5.dir/cmake_hdf5_test.cxx.o -o cmTC_eccf5   && :
+        /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/ld: CMakeFiles/cmTC_eccf5.dir/cmake_hdf5_test.cxx.o: in function `main':
+        cmake_hdf5_test.cxx:(.text.startup.main+0x29): undefined reference to `H5check_version'
+        /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/ld: cmake_hdf5_test.cxx:(.text.startup.main+0x2f): undefined reference to `H5open'
+        /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/ld: cmake_hdf5_test.cxx:(.text.startup.main+0x3e): undefined reference to `H5::FileAccPropList::DEFAULT'
+        /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/ld: cmake_hdf5_test.cxx:(.text.startup.main+0x45): undefined reference to `H5::FileCreatPropList::DEFAULT'
+        /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/ld: cmake_hdf5_test.cxx:(.text.startup.main+0x52): undefined reference to `H5::H5File::H5File(char const*, unsigned int, H5::FileCreatPropList const&, H5::FileAccPropList const&)'
+        /home/basti/miniconda3/envs/amici/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/ld: cmake_hdf5_test.cxx:(.text.startup.main+0x5b): undefined reference to `H5::H5File::~H5File()'
+        collect2: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...

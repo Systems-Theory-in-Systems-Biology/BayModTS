@@ -1,0 +1,15 @@
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/Control_rtf.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/edit_cache.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/list_install_components.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/install.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/install/local.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/CMakeFiles/install/strip.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/swig/CMakeFiles/_Control_rtf.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/swig/CMakeFiles/install-python.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/swig/CMakeFiles/edit_cache.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/swig/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/swig/CMakeFiles/list_install_components.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/swig/CMakeFiles/install.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/swig/CMakeFiles/install/local.dir
+/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/build_model_ext/swig/CMakeFiles/install/strip.dir

@@ -1,0 +1,10 @@
+parameterId	parameterScale	lowerBound	upperBound	estimate	nominalValue
+Asus	lin	-6000.0	6000	1	1.0
+Atrans	lin	0.0	6000	1	1.0
+t1	lin	0.0	400	1	1.0
+t11	lin	0.0	400	1	1.0
+t2	lin	0.0	400	1	1.0
+Tshift	lin	-100.0	100	0	-2.0
+Trange	lin	0.0	100	0	6.0
+p0	lin	0.0	1000	0	0.1
+sd1_y_obs	lin	0.1	1000	1	1.0

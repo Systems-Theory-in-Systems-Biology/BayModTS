@@ -1,0 +1,11 @@
+format_version: 1
+parameter_file: rtf_parameters.tsv
+problems:
+- condition_files:
+  - rtf_experimental_conditions.tsv
+  measurement_files:
+  - measurement_files/Control_measurement_table.tsv
+  observable_files:
+  - rtf_observables.tsv
+  sbml_files:
+  - rtf.xml

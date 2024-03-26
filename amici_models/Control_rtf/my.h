@@ -1,0 +1,1 @@
+#define my_obs my[0]
