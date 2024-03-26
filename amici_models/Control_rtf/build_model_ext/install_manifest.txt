@@ -1,3 +1,0 @@
-/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/Control_rtf/./Control_rtf.py
-/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/Control_rtf/./_Control_rtf.cpython-312-x86_64-linux-gnu.so
-/mnt/c/Users/basti/Documents/Github/BayModTS/amici_models/Control_rtf/Control_rtf/lib/libControl_rtf.a

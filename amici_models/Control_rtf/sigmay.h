@@ -1,1 +1,0 @@
-#define sigma_y_obs sigmay[0]

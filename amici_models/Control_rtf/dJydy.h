@@ -1,1 +1,0 @@
-#define dJy0_dy_obs dJydy[0]
