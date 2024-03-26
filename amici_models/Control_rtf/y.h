@@ -1,1 +1,0 @@
-#define y_obs y[0]
