@@ -25,6 +25,8 @@ Steps to adapt the workflow to your data:
 6. Run the skript.
 7. Look at the evaluation -> The Ensembles allow a credible assessment of your dynamics
 
+The "How_to_apply_BayModTS.py" script walks you through the steps above for an example dataset. Steps to adjust the Workflow to your data are described in the script.
+
 ## When to use BayModTS:
 - if you have measured serial data (time-series) and want to compare the underlying dynamics of different conditions
 - of course it is also possible to look at only one condition and make credible statements about the underlying dynamics
