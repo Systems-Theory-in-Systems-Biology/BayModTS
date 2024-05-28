@@ -36,4 +36,4 @@ The "How_to_apply_BayModTS.py" script walks you through the steps above for an e
 - The base workflow is designed for a Retarded Transient Dynamics (RTD) [Kreutz C (2020)](https://doi.org/10.3389/fphy.2020.00070) but can be used for any ODE-System that is supported by SBML.
 
 
-For more information on BayModTS, please have a look at the upcoming publication XXX.
+For more information on BayModTS, please have a look at our publication [BayModTS Bioinformatics](https://doi.org/10.1093/bioinformatics/btae312).
